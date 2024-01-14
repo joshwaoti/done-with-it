@@ -1,0 +1,20 @@
+[project]
+name = "done_with_it"
+authors = [
+    { name = "josh", email = "joshwaotieno643@gmail.com"}
+]
+description = "The app helps people sell the things they are not using or are done with and also helps buyers to find items they need "
+requires-python = ">=3.10"
+readme = "README.md"
+dynamic = ["version"]
+dependencies = [
+    # "frappe~=15.0.0" # Installed and managed by bench.
+]
+
+[build-system]
+requires = ["flit_core >=3.4,<4"]
+build-backend = "flit_core.buildapi"
+
+# These dependencies are only installed when developer mode is enabled
+[tool.bench.dev-dependencies]
+# package_name = "~=1.1.0"
